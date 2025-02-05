@@ -1,0 +1,55 @@
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+.card-interativo {
+    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow;
+}
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+.card-interativo {
+    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow;
+}
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}

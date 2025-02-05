@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathConjuntos - Aprendizado Interativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-teal-100 to-purple-100 min-h-screen flex flex-col">
+    <header class="bg-white shadow-lg py-3">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-600">MathConjuntos</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <section id="aprender" class="mb-12 text-center">
+            <h2 class="text-3xl font-bold text-teal-700">Aprenda sobre Conjuntos Matemáticos</h2>
+            <div class="carousel-container">
+                <div id="carousel" class="carousel-slide flex">
+                    <div class="carousel-item"> <h3>União de Conjuntos</h3><p>A ∪ B contém todos os elementos de A e B.</p></div>
+                    <div class="carousel-item"> <h3>Interseção</h3><p>A ∩ B contém os elementos comuns entre A e B.</p></div>
+                    <div class="carousel-item"> <h3>Diferença</h3><p>A - B contém os elementos de A que não estão em B.</p></div>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-2 mt-4">
+                <button onclick="mudarSlide(-1)" class="bg-teal-600 text-white px-4 py-2 rounded-lg">←</button>
+                <button onclick="mudarSlide(1)" class="bg-teal-600 text-white px-4 py-2 rounded-lg">→</button>
+            </div>
+        </section>
+
+        <section id="jogar" class="mb-12 text-center">
+            <h2 class="text-3xl font-bold text-teal-700">Teste seu Conhecimento</h2>
+            <p id="pergunta" class="text-lg mt-4 font-semibold">Clique em "Gerar Pergunta" para começar!</p>
+            <input type="text" id="resposta" class="mt-2 p-2 border rounded" placeholder="Digite sua resposta">
+            <button onclick="verificarResposta()" class="mt-4 bg-teal-500 text-white px-6 py-2 rounded">Verificar</button>
+            <button onclick="gerarPergunta()" class="mt-4 bg-gray-500 text-white px-6 py-2 rounded">Gerar Pergunta</button>
+        </section>
+
+        <section id="pontuacao" class="text-center">
+            <h2 class="text-3xl font-bold text-teal-700">Sua Pontuação</h2>
+            <p class="text-2xl font-semibold mt-2">Pontos: <span id="score">0</span></p>
+        </section>
+    </main>
+
+    <footer class="bg-teal-600 text-white py-6 text-center">
+        <p>© 2024 MathConjuntos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
